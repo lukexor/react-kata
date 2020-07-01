@@ -1,12 +1,8 @@
 import React from 'react'
-import { useHistory } from 'react-router'
-
 export default (props) => {
 
-  const history = useHistory()
-
   const continueIn = () => {
-    history.push('/')
+    console.log("Continue pressed.")
   }
 
   return (
