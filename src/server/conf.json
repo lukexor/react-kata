@@ -1,0 +1,16 @@
+{
+  "calendarID": "8mcr25rkfi2ds5rgchesu2et1g@group.calendar.google.com",
+  "privateKey": {
+    "type": "service_account",
+    "project_id": "lithia-scheduling-demo-backend",
+    "private_key_id": "cf03da57d50e596b5ebe4817f2035550a844ff6d",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCMwa9xLERwGFYK\ng2t3iNm51xtXGWKn24PA5SPb4r04tlNjYfQ15NnfWCTkFuzG7J1NYodiMCKjC0E1\nBe1mzKUJmTgoEJKwbs0pfcyjPt3y4gmhbqBShEvtgZkkRMHgEBQJdAy51fHZtxRR\nz98FBfLlwreDCQ/9DxaHp2wNg+yziXKAi3sv9EJRNX+Mx2LMmuNV7Vs9qZpBbSs6\nVzc+Rnv5oQ1ONGOUf0Tn1N9yk1FIFC0UmI1xiGxjFnivuPebPmhVhk8AY9hdYMRo\n7/dpivhvPIj0jeIqVoj//A1vvFYf+LAmvp0oo3JfwFrWxQPjYFwA/L1ay5cYpcXr\nw1n+KrjvAgMBAAECggEABCPILKxwINneYfXGid/5A1m7wJ6LA8PVhq1Wlid/iDT4\nk+I0JAekjsiRYTH5acpYwAdnUvB2fFQe6VfQySa4reUXPTprjgvcNd2w0JZPQc77\nGIff6D1i3Evk/KeXCid+515F54tOzyfuzY8vEH9ByxckfZKdKUSx1XCLoYQhSJB1\npk3D2nl+LSyZ80gPfFZf9nZ1wc8V3t9dJ0R7rY1amkL4zmYtfqdJD0GCzU0Xii28\nuCVx5XsRBXQxXGypD+2wiyVh0QxvNhCQxZoXKqgANRdSYF7kviP9qeC0hj1/AVRZ\nZA5CNSrwtAmpAGD7t5IMOo7cKhewfmeR+vVKXHls8QKBgQDA1ZF+Kt1dqEwRKS3I\n8iM76J18xe6T9hXLJFHBzyNzxJC1u2fLsw/JwyNDXCZ8FZ1/APuRfida+df2Hf6/\nSq+YWY1f07v50MMtfuNaak6zvqPuz4vNrAWsF630weLhvydvqbokx2vnN0Sw7aBq\nGdujEa9e8/0MTA4sxXx+2idM8QKBgQC63Q8VwgnbeTHMb/NIHp6pX9dxhilvny67\nC+jHLUGxEMuq/4KQMyVGnBWtguHdEEshYAay6Z9KlcZnZKJQrKGcAlt81JD9oMRC\nnwb/2DtsUqA+RxsIvBwpXBICxZ7ZziShUqE5CXkrzNvy9BopfEBqfmXo7vYLBOWk\nXlreXAXj3wKBgH08dwBs0FXaToS6rLyb3Zwz58w4NEkuAltrXBm18H1oRN9yNegK\nhA9yR32g5HGkDCSGu9tzBhZEuyhhtKgB1mboijOZLLUDCy+KABghgLml74vSiSZr\nOUfaHSUfor0gS3luzrDCP2br8xXBTnR6FLYkbzQI2+hXoMEdBUzRW8LRAoGAcvdI\nralJKUfCVLZX5no4QZre0VCqs6srNBdaqxhz/z2HIPi82n0tJOkpCSyqS7kXkDwl\nQvQrddb6T2iB2MKtV2+32/BoGDNOLHLs+oGN5dJcFpTm1BPv+55S0nPFjNmgfcR5\nvr7OVx1eAXcflYCFnT+Q8aP7qsHji6IlpALX+N8CgYAWvbbnO+4LUveUMGuaB8iG\nI4dZi/xlZK2Giz1uXHVqHXp/Vy+iCthxS4cx/zQLwflxYbCDV/XDdrNNs3KQY/X9\n4aVhnUmS6rbpiWfs6nS801xMbUcJMlV8jD6pp8089YJ0ZBQmIz7AVS7t4GWAK6rU\nCG9zA52rWaCK79nxdlstuQ==\n-----END PRIVATE KEY-----\n",
+    "client_email": "cal-access-service-account@lithia-scheduling-demo-backend.iam.gserviceaccount.com",
+    "client_id": "114904846493810352708",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cal-access-service-account%40lithia-scheduling-demo-backend.iam.gserviceaccount.com"
+  }
+}
+
