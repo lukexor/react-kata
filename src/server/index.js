@@ -54,8 +54,8 @@ app.get('/raw', asyncHandler(async (req, res, next) => {
 // need semicolon
 ;(async () => {
   appointments = await require("./appointments")
-  app.listen(process.env.PORT, 
-    () => {console.log(`Scheduling server listening on port ${process.env.PORT}...`)}
+  app.listen(process.env.SERVERPORT, 
+    () => {console.log(`Scheduling server listening on port ${process.env.SERVERPORT}...`)}
   )
 })()
 
