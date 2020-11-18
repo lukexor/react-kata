@@ -35,7 +35,13 @@ information.
 
 ### Setup
 
-Execute the following commands in your terminal to get started
+Ensure you have the following packages installed and updated to the latest
+versions:
+
+- [NVM](http://nvm.sh/)
+- [NodeJS](https://nodejs.org/en/)
+
+Execute the following commands in your terminal to get started:
 
 ```sh
 git clone https://github.com/lukexor/react-kata.git
