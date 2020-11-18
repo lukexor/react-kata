@@ -33,6 +33,17 @@ information.
 
 ## React Kata - Scheduler
 
+### Setup
+
+Execute the following commands in your terminal to get started
+
+```sh
+git clone https://github.com/lukexor/react-kata.git
+cd react-kata
+nvm use
+yarn
+```
+
 ### Introduction
 
 ![React Kata](https://github.com/lukexor/react-kata/blob/main/public/logo.png?raw=true)
@@ -179,8 +190,8 @@ Example JSON Request:
    "email": "JohnDoe123@example.com",
    "name": "John Doe",
    "make": "Mazda",
-   "model": "Miata"
-   "modelYear": "2005",
+   "model": "Miata",
+   "modelYear": "2005"
 }
 ```
 

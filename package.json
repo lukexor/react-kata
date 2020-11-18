@@ -4,10 +4,9 @@
   "private": true,
   "proxy": "http://localhost:2000",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "cors": "^2.8.5",
     "express": "^4.17.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -16,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test -- --runInBand",
+    "test": "react-scripts test --runInBand --env=jsdom",
     "server": "node ./src/server/index.js"
   },
   "eslintConfig": {

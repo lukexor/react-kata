@@ -1,8 +1,6 @@
-const cors = require("cors");
 const express = require("express");
 
 const app = express();
-app.use(cors());
 app.use(express.json());
 app.set("json spaces", 2);
 
@@ -16,7 +14,6 @@ const services = [
     id: 2,
     serviceName: "Oil Change",
     serviceDuration: 1800,
-  },
   },
   {
     id: 3,
@@ -68,31 +65,37 @@ app.get("/appointments/:serviceId", (req, res) => {
       (appt) => appt.serviceId === parseInt(req.params.serviceId)
     )
   );
+  res.end();
 });
 
 app.put("/appointments/:id", (req, res) => {
-  const { email, lastName, modelYear, make, model } = req.body;
+  const { email, name, modelYear, make, model } = req.body;
   if (!email) {
-    res.status(400).send(`Invalid email address: ${email}`);
+    res.status(400).send("invalid email address");
+    res.end();
   }
-  if (!lastName) {
-    res.status(400).send(`Invalid Last Name: ${lastName}`);
+  if (!name) {
+    res.status(400).send("invalid customer name");
+    res.end();
   }
   if (!modelYear || !make || !model) {
-    res.status(400).send(`Invalid vehicle: ${modelYear} ${make} ${model}`);
+    res.status(400).send("invalid make/model/modelYear");
+    res.end();
   }
   const appt = appointments.find((appt) => appt.id === req.params.id);
   if (!appt) {
-    res.status(400).send("Invalid Appointment ID");
+    res.status(400).send("invalid appointment id");
+    res.end();
   }
   res.send({
     ...appt,
     email,
-    lastName,
+    name,
     make,
     model,
     modelYear,
   });
+  res.end();
 });
 
 app.listen(process.env.SERVERPORT || 2000, () => {
