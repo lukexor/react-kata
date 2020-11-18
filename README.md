@@ -5,7 +5,7 @@ areas by providing a simple project to build upon given a set of mock
 requirements.
 
 It uses [Create React App](https://github.com/facebook/create-react-app) with
-a REST API service using a local proxy.
+a mock REST API service using a local proxy.
 
 ## Available Scripts
 
@@ -20,7 +20,7 @@ You will also see any lint errors in the console.
 
 ### `yarn server`
 
-Runs the REST API service through a local proxy at
+Runs the mock REST API service through a local proxy at
 [http://localhost:2000](http://localhost:2000).
 
 ### `yarn test`
@@ -35,7 +35,7 @@ information.
 
 ### Introduction
 
-![React Kata](https://raw.githubusercontent.com/lukexor/react-kata/main/public/logo.png)
+![React Kata](https://github.com/lukexor/react-kata/blob/main/public/logo.png?raw=true)
 
 Lithia Motors takes pride in helping people in all phases of their
 car-ownership. Because people have a lot of anxiety about bringing in their cars
@@ -48,14 +48,14 @@ replacements, etc).
 ### Tasks
 
 1. **Design**: Read the requirements and sketch out some simple mock-ups. This
-   is an important task, so give it the thought it deserves.
-1. **Plan**: Due to limited time, the plan for implementation should be split
-   into 3 phases. Prioritize which features should be implemented in `Phase 1`
-   and are considered MVP. Mention what might be in `Phase 2` or `Phase 3` and
-   why. Base your choices on importance to Product + UX, as well as technical
+   is its own important task, so give it the thought it deserves.
+1. **Plan**: Due to limited time, assume the project should be split into
+   3 phases. Prioritize which features should be implemented in `Phase 1` and
+   are considered *MVP*. Mention what might be in `Phase 2` or `Phase 3` and why.
+   Base your choices on importance to Product + UX, as well as technical
    complexity.
 1. **Implement**: Start building `Phase 1` features from the provided starter
-   app.
+   application.
 
 ### Requirements
 
@@ -65,7 +65,7 @@ replacements, etc).
 long as people can actually book an appointment with us, our shareholders will
 be happy!"
 - "We definitely want people to see our Logo first and foremost and a little blurb
-about what we do. After that they should be able to click a ‘Get Started' button
+about what we do. After that they should be able to click a *Get Started* button
 to get the ball rolling."
 - "Once they're in the main flow, they should be presented with all the services
 available in the next two weeks. When they select a service, they should be
@@ -73,20 +73,20 @@ presented with all the available appointment slots for that service. They can
 then select a slot and book it, by entering their name, email, and vehicle
 information.
 - "Let's try to show an icon or  picture with each available service. Make sure
-it really POPS! We're a pretty unique company because we want to have a UI that
-really POPS!"
-- "Once they pick the repair they need, let's give them some kind of big
+it really **POPS!** We're a pretty unique company because we want to have a UI that
+really **POPS!**"
+- "Once they pick the service they need, let's give them some kind of big
 confirmation prompt. If they say yes, go ahead and book it"
 - "Almost forgot! We should put our company contact info somewhere on the landing
-screen if people want to talk to someone. It's supportbutton@lithia.com and the
-number is 555-872-3289."
+screen if people want to talk to someone. It's **supportbutton@lithia.com** and the
+number is **555-872-3289.**"
 - "Once they're all scheduled, let's get that serotonin flowing with some big
 green check marks or smiley faces or something. You can handle that can't you?"
 
 #### Engineering Manager
 
-- "Our technical direction is to use React. You should feel free to use any
-  state library, router, and UI framework you feel you need, but be able to
+- "Our technical direction is to use *React*. You should feel free to use any
+  state library, router, or UI framework you feel you need, but be able to
   explain your choices. If you can implement the app without any of those
   things, that's ok too. Let's not overbuild this, but also start to think
   about our technological roadmap. Getting the tech right is my **TOP PRIORITY!**"
@@ -100,7 +100,7 @@ green check marks or smiley faces or something. You can handle that can't you?"
 
 ### API Documentation
 
-#### GET /services
+#### `GET` /services
 
 Returns an array of services available within the next 14 calendar days. Each contains:
 
@@ -130,7 +130,7 @@ Example JSON response:
 ]
 ```
 
-#### GET /appointments/:serviceId
+#### `GET` /appointments/:serviceId
 
 Returns an array of appointment blocks currently available for the requested
 `Service ID` within the next 14 days. Each contains:
@@ -161,7 +161,7 @@ Example JSON Response:
 ]
 ```
 
-#### PUT /appointments/:id
+#### `PUT` /appointments/:id
 
 Book the requested appointment for a particular customer and vehicle. Request
 body must contain:
@@ -178,9 +178,9 @@ Example JSON Request:
 {
    "email": "JohnDoe123@example.com",
    "name": "John Doe",
-   "modelYear": "2005",
    "make": "Mazda",
    "model": "Miata"
+   "modelYear": "2005",
 }
 ```
 
@@ -196,6 +196,6 @@ Example JSON Response:
   "email": "JohnDoe123@gmail.com",
   "make": "Mazda",
   "model": "Miata",
-  "modelYear", "2005"
+  "modelYear": "2005"
 }
 ```
