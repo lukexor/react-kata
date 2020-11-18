@@ -44,6 +44,18 @@ nvm use
 yarn
 ```
 
+Start the local app development server:
+
+```sh
+yarn start
+```
+
+In a separate terminal start the mock REST API server:
+
+```sh
+yarn server
+```
+
 ### Introduction
 
 ![React Kata](https://github.com/lukexor/react-kata/blob/main/public/logo.png?raw=true)
