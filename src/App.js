@@ -1,8 +1,10 @@
-import React from 'react';
-import LandingPage from './pages/Landing'
+import React from "react";
+import LandingPage from "./pages/Landing";
 
-export default () => (
-  <main style={{margin: '0 auto', maxWidth: 1200}}>
+const App = () => (
+  <main>
     <LandingPage />
   </main>
-)
+);
+
+export default App;

@@ -1,14 +1,11 @@
-import React from 'react'
-export default (props) => {
+import React from "react";
 
-  const continueIn = () => {
-    console.log("Continue pressed.")
-  }
-
+const Landing = () => {
   return (
-    <div style={{height: '90vw', backgroundColor: '#aaa'}}>
-      <h1 style={{margin: 'auto 100px'}}>Welcome</h1>
-      <button onClick={continueIn} >continue</button>
+    <div>
+      <h1>Welcome</h1>
     </div>
-  )
-}
+  );
+};
+
+export default Landing;

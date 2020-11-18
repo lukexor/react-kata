@@ -1,4 +1,3 @@
-require("dotenv/config");
 const cors = require("cors");
 const express = require("express");
 
@@ -11,17 +10,18 @@ const services = [
   {
     id: 1,
     serviceName: "Replace Brakes",
-    duration: "1 hour",
+    serviceDuration: 3600,
   },
   {
     id: 2,
     serviceName: "Oil Change",
-    duration: "30 minutes",
+    serviceDuration: 1800,
+  },
   },
   {
     id: 3,
     serviceName: "Rotate Tires",
-    duration: "30 minutes",
+    serviceDuration: 1800,
   },
 ];
 
@@ -52,8 +52,8 @@ services.forEach((service) => {
       id: uuid(),
       serviceName: service.serviceName,
       serviceId: service.id,
-      start: randomDate().toLocaleString(),
-      duration: service.duration,
+      apptStartTime: randomDate().toISOString(),
+      apptDuration: service.duration,
     });
   }
 });
@@ -87,16 +87,16 @@ app.put("/appointments/:id", (req, res) => {
   }
   res.send({
     ...appt,
-    description: `${appt.serviceName} appointment scheduled for:
-Last Name: \t\t${lastName}
-email: \t\t\t${email}
-Date & Time: \t${appt.start}
-Vehicle: \t\t${modelYear} ${make} ${model}`,
+    email,
+    lastName,
+    make,
+    model,
+    modelYear,
   });
 });
 
-app.listen(process.env.SERVERPORT, () => {
+app.listen(process.env.SERVERPORT || 2000, () => {
   console.log(
-    `Scheduling server listening on port ${process.env.SERVERPORT}...`
+    `Scheduling server listening on port ${process.env.SERVERPORT || 2000}...`
   );
 });
