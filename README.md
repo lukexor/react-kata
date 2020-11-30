@@ -69,58 +69,64 @@ yarn server
 Lithia Motors takes pride in helping people in all phases of their
 car-ownership. Because people have a lot of anxiety about bringing in their cars
 for service and repair, a robust suite of services is being built to make
-working with dealerships more transparent. It's up to our scrappy
-two-person team to build a light-weight and snappy UI to offer choices of
-available services and help users book appointments! (such as oil changes, tire
+working with dealerships more transparent. It's up to our scrappy two-person
+team to build a light-weight and snappy UI to offer choices of available
+services and help users book appointments! (such as oil changes, tire
 replacements, etc).
 
 ### Tasks
 
-1. **Discovery/Design**: Read the requirements and sketch out some simple mock-ups. This
-   is its own important task, so give it the thought it deserves. (~15-20 min)
-1. **Organize/Plan**: Due to limited time, assume the project should be split into
-   3 phases. Prioritize which features should be implemented in `Phase 1` and
-   are considered *MVP*. Mention what might be in `Phase 2` or `Phase 3` and why.
-   Base your choices on importance to Product + UX, as well as technical
+1. **Discovery/Design**: Read the requirements and sketch out some simple
+   mock-ups. This is its own important task, so give it the thought it deserves.
+   (~15-20 min)
+1. **Organize/Plan**: Due to limited time, assume the project should be split
+   into 3 phases. Prioritize which features should be implemented in `Phase 1`
+   and are considered *MVP*. Mention what might be in `Phase 2` or `Phase 3` and
+   why.  Base your choices on importance to Product + UX, as well as technical
    complexity. (~10 min)
-1. **Implement/Test**: Start building `Phase 1` features from the provided starter
-   application. (~1 hr)
+1. **Implement/Test**: Start building `Phase 1` features from the provided
+   starter application. (~1 hr)
+
+**Remember:**: This is an exercise to showcase a range of professional qualities
+and, due to limited time, do not need to follow as robust a process as a real
+production application.
 
 ### Requirements
 
 #### Product Owner & Design/UX Strategist
 
 - "Making sure people can actually do business with us is table-stakes here. As
-long as people can actually book an appointment with us, our shareholders will
-be happy!"
-- "We definitely want people to see our Logo first and foremost and a little blurb
-about what we do. After that they should be able to click a *Get Started* button
-to get the ball rolling."
+  long as people can actually book an appointment with us, our shareholders will
+  be happy!"
+- "We definitely want people to see our Logo first and foremost and a little
+  blurb about what we do. After that they should be able to click a *Get
+  Started* button to get the ball rolling."
 - "Once they're in the main flow, they should be presented with all the services
-available in the next two weeks. When they select a service, they should be
-presented with all the available appointment slots for that service. They can
-then select a slot and book it, by entering their name, email, and vehicle
-information.
+  available in the next two weeks. When they select a service, they should be
+  presented with all the available appointment slots for that service. They can
+  then select a slot and book it, by entering their name, email, and vehicle
+  information.
 - "Let's try to show an icon or  picture with each available service. Make sure
-it really **POPS!** We're a pretty unique company because we want to have a UI that
-really **POPS!**"
+  it really **POPS!** We're a pretty unique company because we want to have a UI
+  that really **POPS!**"
 - "Once they pick the service they need, let's give them some kind of big
-confirmation prompt. If they say yes, go ahead and book it"
-- "Almost forgot! We should put our company contact info somewhere on the landing
-screen if people want to talk to someone. It's **supportbutton@lithia.com** and the
-number is **555-872-3289.**"
+  confirmation prompt. If they say yes, go ahead and book it"
+- "Almost forgot! We should put our company contact info somewhere on the
+  landing screen if people want to talk to someone. It's
+  **supportbutton@lithia.com** and the number is **555-872-3289.**"
 - "Once they're all scheduled, let's get that serotonin flowing with some big
-green check marks or smiley faces or something. You can handle that can't you?"
+  green check marks or smiley faces or something. You can handle that can't
+  you?"
 
 #### Engineering Manager
 
 - "Our technical direction is to use *React*. You should feel free to use any
   state library, router, or UI framework you feel you need, but be able to
   explain your choices. If you can implement the app without any of those
-  things, that's ok too. Let's not overbuild this, but also start to think
-  about our technological roadmap. Getting the tech right is my **TOP PRIORITY!**"
-- "If at all possible, I'd like at least one meaningful unit test. Testing is
-  my **TOP PRIORITY!**"
+  things, that's ok too. Let's not overbuild this, but also start to think about
+  our technological roadmap. Getting the tech right is my **TOP PRIORITY!**"
+- "If at all possible, I'd like at least one meaningful unit test. Testing is my
+  **TOP PRIORITY!**"
 - "These back-end engineers can't make a stable web service to save their lives!
   Make sure the pages still work even if the backend services are being spotty.
   Resiliency is my **TOP PRIORITY!**"
@@ -131,7 +137,8 @@ green check marks or smiley faces or something. You can handle that can't you?"
 
 #### `GET` /services
 
-Returns an array of services available within the next 14 calendar days. Each contains:
+Returns an array of services available within the next 14 calendar days. Each
+contains:
 
 - Service ID
 - Service Name
