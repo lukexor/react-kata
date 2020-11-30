@@ -76,15 +76,15 @@ replacements, etc).
 
 ### Tasks
 
-1. **Design**: Read the requirements and sketch out some simple mock-ups. This
-   is its own important task, so give it the thought it deserves.
-1. **Plan**: Due to limited time, assume the project should be split into
+1. **Discovery/Design**: Read the requirements and sketch out some simple mock-ups. This
+   is its own important task, so give it the thought it deserves. (~15-20 min)
+1. **Organize/Plan**: Due to limited time, assume the project should be split into
    3 phases. Prioritize which features should be implemented in `Phase 1` and
    are considered *MVP*. Mention what might be in `Phase 2` or `Phase 3` and why.
    Base your choices on importance to Product + UX, as well as technical
-   complexity.
-1. **Implement**: Start building `Phase 1` features from the provided starter
-   application.
+   complexity. (~10 min)
+1. **Implement/Test**: Start building `Phase 1` features from the provided starter
+   application. (~1 hr)
 
 ### Requirements
 
