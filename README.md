@@ -33,7 +33,7 @@ information.
 
 ## React Kata - Scheduler
 
-### Setup
+### Installation & Setup
 
 Ensure you have the following packages installed and updated to the latest
 versions:
@@ -46,7 +46,7 @@ Execute the following commands in your terminal to get started:
 ```sh
 git clone https://github.com/lukexor/react-kata.git
 cd react-kata
-nvm use
+nvm install
 yarn
 ```
 
@@ -197,7 +197,7 @@ Example JSON Response:
 ]
 ```
 
-#### `PUT` /appointments/:id
+#### `POST` /appointments/:id
 
 Book the requested appointment for a particular customer and vehicle. Request
 body must contain:

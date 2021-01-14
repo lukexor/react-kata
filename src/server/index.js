@@ -68,7 +68,7 @@ app.get("/appointments/:serviceId", (req, res) => {
   res.end();
 });
 
-app.put("/appointments/:id", (req, res) => {
+app.post("/appointments/:id", (req, res) => {
   const { email, name, modelYear, make, model } = req.body;
   if (!email) {
     res.status(400).send("invalid email address");
