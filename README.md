@@ -27,15 +27,17 @@ to `http://localhost:2000/services`)
 
 ### Notes
 
-- **Remember**: This is an exercise to and, due to limited time, do not need to
+- **Remember**: This is an exercise and, due to limited time, do not need to
   follow as robust a process as a real production application.
-- This exercise uses Functional React with hooks, so be prepared to demonstrate
-  your knowledge using that paradigm.
+- This exercise uses [Functional
+  React](https://reactjs.org/docs/hooks-intro.html) with hooks, so be prepared
+  to demonstrate your knowledge using that paradigm.
 - This exercise should not be worked on ahead of time. The intent is to work
-  through this during together during the interview.
+  through this together during the interview.
 - You are not expected to finish the exercise. The scope is deliberately larger
-  than an interview is expected to last. The intent is to see how a candidate
-  works through the outlined problem.
+  than an interview is expected to last. The intent is to see how you work
+  through the software development lifecycle given the constraints of the
+  exercise.
 
 ## Installation & Setup
 
@@ -82,7 +84,7 @@ yarn test
    and are considered _MVP_. Base your choices on importance to Product + UX, as
    well as technical complexity. (~10 min)
 1. **Implement/Test**: Start building `Phase 1` features from the provided
-   starter application. (~1 hr)
+   starter application. (~45-60 min)
 
 ## Requirements
 
