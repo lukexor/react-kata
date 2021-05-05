@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --runInBand --env=jsdom",
+    "test": "react-scripts test",
     "server": "node ./src/server/index.js"
   },
   "eslintConfig": {

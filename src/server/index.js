@@ -9,18 +9,23 @@ app.set("json spaces", 2);
 const services = [
   {
     id: 1,
-    serviceName: "Replace Brakes",
-    serviceDuration: 3600,
+    serviceName: "Synthetic Oil Change",
+    serviceDuration: 1800,
   },
   {
     id: 2,
-    serviceName: "Oil Change",
+    serviceName: "Brake Inspection",
     serviceDuration: 1800,
   },
   {
     id: 3,
-    serviceName: "Rotate Tires",
-    serviceDuration: 1800,
+    serviceName: "Tire Rotation & Inspection",
+    serviceDuration: 3600,
+  },
+  {
+    id: 4,
+    serviceName: "Express Auto Detailing",
+    serviceDuration: 5400,
   },
 ];
 
@@ -57,15 +62,20 @@ services.forEach((service) => {
   }
 });
 
-app.get("/services", (req, res) => res.send(services));
+app.get("/services", (_req, res) => res.send(services));
 
-app.get("/appointments", (req, res) => res.send(appointments));
+app.get("/appointments", (_req, res) => res.send(appointments));
 
 app.get("/appointments/:serviceId", (req, res) => {
   res.send(
-    appointments.filter(
-      (appt) => appt.serviceId === parseInt(req.params.serviceId)
-    )
+    appointments
+      .filter((appt) => appt.serviceId === parseInt(req.params.serviceId))
+      .map(({ id, serviceName, apptStartTime, apptDuration }) => ({
+        id,
+        serviceName,
+        apptStartTime,
+        apptDuration,
+      }))
   );
   res.end();
 });

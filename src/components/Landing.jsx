@@ -1,7 +1,9 @@
+import "./Landing.css";
+
 const Landing = () => {
   return (
-    <div>
-      <h1 style={{ textAlign: "center" }}>Welcome</h1>
+    <div className="splash">
+      <h1>Welcome to Lithia Motors</h1>
     </div>
   );
 };

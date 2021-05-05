@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title></title>
+    <desc></desc>
+    <defs>
+        <path d="M9.47754026,18.5865194 C8.68195234,17.8044419 7.39210962,17.8045011 6.59659592,18.5866515 C5.80108222,19.368802 5.80114238,20.6368592 6.5967303,21.4189367 L27.5249001,41.9917103 C28.1802101,42.6368711 29.0710448,43 30,43 C30.9289552,43 31.8197899,42.6368711 32.4761926,41.9906354 L53.4032697,21.4189367 C54.1988576,20.6368592 54.1989178,19.368802 53.4034041,18.5866515 C52.6078904,17.8045011 51.3180477,17.8044419 50.5224597,18.5865194 L29.9999996,38.7604731 L9.47754026,18.5865194 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-Ui-/-Caret" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="CaretIcon" fill="#3A3A3A" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>
