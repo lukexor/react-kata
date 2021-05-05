@@ -16,7 +16,7 @@
 
 ## Introduction
 
-![React Kata](https://github.com/lukexor/react-kata/blob/main/public/logo.png?raw=true)
+![React Kata](https://github.com/lukexor/react-kata/blob/main/public/images/logo.png?raw=true)
 
 This project provides an interviewing screen for React engineers by providing a
 mock project to build.
