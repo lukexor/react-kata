@@ -53,25 +53,25 @@ Execute the following commands in your terminal to get started:
 git clone https://github.com/lukexor/react-kata.git
 cd react-kata
 nvm install
-yarn
+npm install
 ```
 
 Start the local app development server:
 
 ```sh
-yarn start
+npm start
 ```
 
 In a separate terminal start the REST API server:
 
 ```sh
-yarn server
+npm run server
 ```
 
 To run unit tests:
 
 ```sh
-yarn test
+npm test
 ```
 
 ## Tasks
