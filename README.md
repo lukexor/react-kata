@@ -105,7 +105,7 @@ book appointments such as oil changes, tire replacements, etc.
 
 ### Product Owner & Design/UX
 
-- "Making sure people can do business with us is table-stakes here. As long as
+- "Making sure people can do business with us is most important goal. As long as
   people can book an appointment with us, our shareholders will be happy!"
 - "We want people to see our Logo first and foremost and a little blurb about
   what we do. After that they should be able to click a _Get Started_ button to
